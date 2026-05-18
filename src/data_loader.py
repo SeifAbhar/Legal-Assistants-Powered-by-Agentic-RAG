@@ -1,36 +1,32 @@
-import os
-from langchain_community.document_loaders import PyPDFLoader, TextLoader
-from langchain_community.document_loaders import Docx2txtLoader
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+import json
+from typing import List
+from langchain.schema import Document
+import sys
+from pathlib import Path
+sys.path.append(str(Path(__file__).parent.parent))
 import config
 
-def load_documents_from_folder(folder_path):
+def _load_jsonl_chunks(jsonl_path: str, doc_type: str) -> List[Document]:
     docs = []
-    for root, _, files in os.walk(folder_path):
-        for file in files:
-            path = os.path.join(root, file)
-            if file.endswith(".pdf"):
-                loader = PyPDFLoader(path)
-            elif file.endswith(".txt"):
-                loader = TextLoader(path, encoding="utf-8")
-            elif file.endswith(".docx"):
-                loader = Docx2txtLoader(path)
-            else:
-                continue
-            docs.extend(loader.load())
+    with open(jsonl_path, "r", encoding="utf-8") as f:
+        for line in f:
+            chunk = json.loads(line)
+            docs.append(Document(
+                page_content=chunk["text"],
+                metadata={
+                    "source": chunk["doc_id"],
+                    "chunk_index": chunk["chunk_index"],
+                    "tokens": chunk.get("tokens", 0),
+                    "doc_type": doc_type
+                }
+            ))
     return docs
 
+def load_case_law_chunks() -> List[Document]:
+    return _load_jsonl_chunks(config.CHUNKS_CASE_LAW_JSONL, "case_law")
+
+def load_contracts_chunks() -> List[Document]:
+    return _load_jsonl_chunks(config.CHUNKS_CONTRACTS_JSONL, "contracts")
+
 def load_and_split_all():
-    case_law_raw = load_documents_from_folder(config.CASE_LAW_DIR)
-    contracts_raw = load_documents_from_folder(config.CONTRACTS_DIR)
-    splitter = RecursiveCharacterTextSplitter(
-        chunk_size=config.CHUNK_SIZE,
-        chunk_overlap=config.CHUNK_OVERLAP
-    )
-    case_law_chunks = splitter.split_documents(case_law_raw)
-    contract_chunks = splitter.split_documents(contracts_raw)
-    for chunk in case_law_chunks:
-        chunk.metadata["doc_type"] = "case_law"
-    for chunk in contract_chunks:
-        chunk.metadata["doc_type"] = "contract"
-    return case_law_chunks, contract_chunks
+    return load_case_law_chunks(), load_contracts_chunks()

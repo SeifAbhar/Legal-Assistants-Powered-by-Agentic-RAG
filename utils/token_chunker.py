@@ -16,7 +16,10 @@ Output format (JSONL): {"doc_id": "<id>", "chunk_index": 0, "text": "...", "toke
 import argparse
 import json
 import os
+import config
 from typing import Iterable, List, Dict, Tuple, Union
+from langchain.schema import Document
+
 
 
 def _get_tiktoken_encoding(model: str):
@@ -161,6 +164,34 @@ def main():
 
     print(f"Wrote {len(chunks)} chunks to {args.output_file}")
 
+def _load_jsonl_chunks(jsonl_path: str, doc_type: str) -> List[Document]:
+    """Load chunks from a JSONL file and return LangChain Document objects."""
+    docs = []
+    with open(jsonl_path, "r", encoding="utf-8") as f:
+        for line in f:
+            chunk = json.loads(line)
+            docs.append(Document(
+                page_content=chunk["text"],
+                metadata={
+                    "source": chunk["doc_id"],
+                    "chunk_index": chunk["chunk_index"],
+                    "tokens": chunk.get("tokens", 0),
+                    "doc_type": doc_type
+                }
+            ))
+    return docs
+
+def load_case_law_chunks() -> List[Document]:
+    """Load pre‑chunked case law documents from JSONL."""
+    return _load_jsonl_chunks(config.CHUNKS_CASE_LAW_JSONL, "case_law")
+
+def load_contracts_chunks() -> List[Document]:
+    """Load pre‑chunked contract documents from JSONL."""
+    return _load_jsonl_chunks(config.CHUNKS_CONTRACTS_JSONL, "contracts")
+
+def load_and_split_all():
+    """Alias for loading chunks; used by vector_store if needed."""
+    return load_case_law_chunks(), load_contracts_chunks()
 
 if __name__ == "__main__":
     main()

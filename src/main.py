@@ -23,17 +23,5 @@ if __name__ == "__main__":
         "draft_clause": None
     }
 
-    print(f"\n🔍 Processing: {args.query}\n{'='*60}")
-    # Optional: uncomment to see step-by-step
-    # for step, state in legal_agent.stream(initial_state):
-    #     print(f"✓ {list(step.keys())[0]}")
-
     final = legal_agent.invoke(initial_state)
-    print("\n" + "="*60)
-    print("📋 FINAL ANSWER")
-    print("="*60)
     print(final["answer"])
-    print("\n📚 SOURCES:", final["sources"])
-    if final.get("draft_clause"):
-        print("\n📝 DRAFT CLAUSE / COUNTER-ARGUMENT:")
-        print(final["draft_clause"])

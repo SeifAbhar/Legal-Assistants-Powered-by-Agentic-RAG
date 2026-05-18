@@ -1,6 +1,6 @@
 from langgraph.graph import StateGraph, END
 from .agent_state import AgentState
-from .agent_nodes import (decompose_query, retrieve_documents, evaluate_context, generate_answer, draft_clause)
+from .agent_nodes import decompose_query, retrieve_documents, evaluate_context, generate_answer, draft_clause
 
 def build_agent():
     workflow = StateGraph(AgentState)

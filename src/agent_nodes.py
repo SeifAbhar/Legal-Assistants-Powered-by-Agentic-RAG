@@ -3,6 +3,9 @@ from .agent_state import AgentState
 from .tools import search_case_law, search_contracts
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import SystemMessage, HumanMessage
+import sys
+from pathlib import Path
+sys.path.append(str(Path(__file__).parent.parent))
 import config
 
 llm = ChatOpenAI(model=config.LLM_MODEL, temperature=0)
