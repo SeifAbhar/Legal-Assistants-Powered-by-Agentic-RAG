@@ -1,0 +1,12 @@
+Title: Alpha Corp v. BetaSupply
+Citation: 2024 HC 118
+Court: Commercial Division, High Court
+Date: 2024-02-20
+---
+Facts: Alpha Corp (buyer) and BetaSupply (supplier) signed a 3-year supply agreement in 2018. In 2020, BetaSupply failed to deliver components due to factory shutdowns caused by COVID-19. The contract includes a force majeure clause listing 'natural disasters, acts of God, and governmental action' but does not mention pandemics.
+
+Issue: 1) Does COVID-19 qualify as force majeure under this clause? 2) Does the doctrine of frustration of purpose apply? 3) What damages, if any, can Alpha Corp claim?
+
+Holding: COVID-19 is not covered by the force majeure clause because the clause does not list pandemics or public health emergencies. The doctrine of frustration does not apply because performance was not rendered radically different. BetaSupply is liable for damages.
+
+Reasoning: The clause is interpreted narrowly under the ejusdem generis rule. A pandemic is a distinct category from natural disasters, acts of God, and governmental action. Although governmental lockdowns forced the shutdown, the proximate cause was the pandemic, not a direct governmental order. Frustration requires a fundamental change in contractual obligations, which was not established. Alpha Corp is entitled to expectation damages for the undelivered components.

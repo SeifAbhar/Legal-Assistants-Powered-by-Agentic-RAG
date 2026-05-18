@@ -1,0 +1,6 @@
+CONTRACT TYPE: Fixed-Price Construction Contract (AIA‑style)
+PARTIES: BuildRight General Contractors (Contractor) and OfficeVisions LLC (Owner)
+EFFECTIVE DATE: 2019-08-01
+Project: Construction of a commercial office building for a fixed price of $5,000,000.
+---
+Section 7 — Changes in the Work. The Owner may order changes in the Work without invalidating the Contract. All changes must be in the form of a written Change Order signed by both parties. If the Owner verbally instructs additional work, the Contractor shall confirm in writing within 7 days. Failure to issue a written Change Order releases the Owner from payment for such verbal instructions.

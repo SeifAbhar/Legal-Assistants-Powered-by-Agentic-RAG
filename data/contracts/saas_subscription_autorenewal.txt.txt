@@ -1,0 +1,5 @@
+CONTRACT TYPE: SaaS Enterprise Subscription Agreement
+PARTIES: CloudSuite Corp. (Provider) and StartupXYZ Inc. (Customer)
+EFFECTIVE DATE: 2021-03-20
+---
+Section 12.4 — Automatic Renewal. This Agreement shall automatically renew for successive one-year terms unless Customer provides written notice of cancellation at least ninety (90) days prior to the end of the then-current term. Failure to provide such notice will result in automatic renewal, and Customer shall be invoiced for the full subscription fee.

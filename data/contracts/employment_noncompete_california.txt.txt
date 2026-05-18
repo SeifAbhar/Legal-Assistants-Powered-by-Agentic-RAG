@@ -1,0 +1,7 @@
+CONTRACT TYPE: Employment Agreement (Non-Compete Clause)
+PARTIES: TechSolutions Inc. (Employer) and Sarah Chen (Employee)
+EFFECTIVE DATE: 2022-05-01
+---
+Section 8 — Non-Competition. Employee agrees that for a period of two (2) years following termination of employment, she will not directly or indirectly engage in any business that competes with the Employer's SaaS industry throughout the United States. This restriction applies regardless of the location of the competitive activity.
+
+Governing Law. This Agreement shall be governed by and construed in accordance with the laws of the State of Texas, without regard to its conflict of laws principles.

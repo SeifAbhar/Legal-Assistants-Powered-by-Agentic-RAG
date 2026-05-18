@@ -1,0 +1,5 @@
+CONTRACT TYPE: Employment Agreement (IP Assignment Clause)
+PARTIES: DataDriven LLC (Employer) and Mark Lee (Employee)
+EFFECTIVE DATE: 2023-01-15
+---
+Section 12 — Intellectual Property. Employee assigns to Employer all right, title, and interest in any inventions, discoveries, designs, or works of authorship conceived or made by Employee during the period of employment, whether or not reduced to practice, and whether or not developed during normal working hours or using Employer's resources.

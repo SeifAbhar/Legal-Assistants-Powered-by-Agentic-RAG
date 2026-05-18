@@ -1,0 +1,12 @@
+Title: E‑Commerce Platform Ltd v. SpeedyLogistics
+Citation: 2023 EWHC 567 (Comm)
+Court: High Court of England and Wales
+Date: 2023-11-12
+---
+Facts: An e-commerce platform contracted a logistics company to deliver 10,000 packages during peak holiday season. The contract included a liquidated damages clause of $50 per package per day of delay. The logistics company was 5 days late on 8,000 packages, resulting in a $2,000,000 damages claim.
+
+Issue: 1) Is the $50/package/day clause a genuine pre-estimate of loss (liquidated damages) or an unenforceable penalty? 2) What was the actual loss to the platform? 3) How do English courts (Cavendish Square) vs US courts assess this?
+
+Holding: The clause is an unenforceable penalty under English law. It lacks proportionality to any legitimate interest and is extravagant relative to the platform's actual losses.
+
+Reasoning: Applying Cavendish Square Holding BV v Talal El Makdessi, a clause is a penalty if it imposes a detriment out of all proportion to any legitimate interest. The $50/day per package far exceeds typical delivery delay losses (actual losses were minimal). Under the UCC in the US, the test is whether the clause is reasonable in light of anticipated harm; here, it would likely also fail. The logistics company is liable only for proven actual damages.

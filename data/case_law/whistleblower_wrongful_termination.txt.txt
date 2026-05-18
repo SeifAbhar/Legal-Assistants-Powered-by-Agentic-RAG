@@ -1,0 +1,12 @@
+Title: Doe v. MegaCorp Industries
+Citation: 2024 WL 876543 (N.D. Cal.)
+Court: U.S. District Court for the Northern District of California
+Date: 2024-07-08
+---
+Facts: An employee was terminated after raising safety concerns about a product defect to the CEO. The company claims termination was for performance reasons and cites documented performance improvement plans. The employee alleges the PIPs were fabricated and the real reason was retaliation for whistleblowing.
+
+Issue: 1) Does the employee have a whistleblower retaliation claim? 2) What standard of proof is required? 3) Do Sarbanes-Oxley or Dodd-Frank whistleblower protections apply to this private company? 4) Is the at-will employment doctrine overcome?
+
+Holding: The employee has a plausible Sarbanes-Oxley whistleblower claim. SOX applies to private companies if they do business with public companies. The at-will doctrine does not bar retaliation claims. Standard of proof: employee must show protected activity was a contributing factor.
+
+Reasoning: Sarbanes-Oxley §806 protects employees of privately held companies that are contractors of publicly traded entities. The safety complaint qualifies as protected activity. The temporal proximity to termination and suspect PIPs raise a genuine issue of fact. Under the burden-shifting framework, the employee need only demonstrate that the protected activity was a contributing factor; the employer must then show by clear and convincing evidence that it would have terminated regardless. At-will employment does not shield employers from statutory retaliation claims.

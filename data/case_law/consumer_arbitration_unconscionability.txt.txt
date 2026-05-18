@@ -1,0 +1,12 @@
+Title: In re Online Terms of Service Arbitration
+Citation: 2023 Cal. Super. LEXIS 1200
+Court: California Superior Court
+Date: 2023-09-15
+---
+Facts: A consumer signed an online terms of service agreement containing a mandatory arbitration clause with a class action waiver. The consumer is part of a class alleging systematic overcharging of $15 per month over 3 years. Individual arbitration would cost more than any individual's recovery.
+
+Issue: 1) Is the arbitration clause unconscionable where individual recovery is less than arbitration costs? 2) Does AT&T Mobility v. Concepcion preclude unconscionability challenges to class waivers? 3) Is there a public policy exception for claims that cannot practically be brought in individual arbitration?
+
+Holding: The arbitration clause is procedurally and substantively unconscionable. The class action waiver is unenforceable because it effectively prevents the vindication of small-value claims.
+
+Reasoning: Under California law, both procedural unconscionability (adhesion contract) and substantive unconscionability (cost-prohibitive arbitration) exist. AT&T Mobility v. Concepcion did not foreclose unconscionability challenges based on the effective vindication doctrine, which remains viable for claims where arbitration costs dwarf potential recovery. Public policy favors access to courts when individual arbitration is economically impossible.

@@ -1,0 +1,12 @@
+Title: In re Data Breach of EuroFintech PLC
+Citation: GDPR‑EC‑2024‑03
+Court: European Data Protection Board (fictional)
+Date: 2024-04-10
+---
+Facts: A European fintech company suffered a data breach exposing 500,000 customer records. Their cloud vendor processed the data under a data processing agreement (DPA). The DPA states the vendor implements 'industry-standard security measures' but does not specify encryption requirements. Customers are filing a class action.
+
+Issue: 1) Is the vendor a data processor or joint controller under GDPR? 2) Does 'industry-standard security' satisfy Article 32 technical safeguards? 3) What is the maximum fine under Article 83? 4) Can liability be limited by the DPA's liability cap?
+
+Holding: The vendor is a data processor. 'Industry-standard security' without encryption did not meet Article 32. The fintech company, as controller, faces fines up to €20 million or 4% of global annual turnover. The DPA's liability cap may be overridden by GDPR non-waivable provisions.
+
+Reasoning: Under GDPR Article 28, the vendor acted solely on the controller's instructions, making it a processor. Article 32 requires 'appropriate technical and organisational measures' considering the state of the art; an unspecified industry standard is insufficient. The liability cap cannot limit data subjects' rights under Article 82. Both controller and processor may face administrative fines.
