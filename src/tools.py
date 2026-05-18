@@ -3,7 +3,6 @@ from .vector_store import load_case_law_store, load_contracts_store
 
 @tool
 def search_case_law(query: str, k: int = 5) -> str:
-    """Search case law database for relevant precedents and judgments."""
     vectordb = load_case_law_store()
     docs = vectordb.similarity_search(query, k=k)
     results = []
@@ -15,7 +14,6 @@ def search_case_law(query: str, k: int = 5) -> str:
 
 @tool
 def search_contracts(query: str, k: int = 5) -> str:
-    """Search contract database for relevant clauses, NDAs, employment agreements."""
     vectordb = load_contracts_store()
     docs = vectordb.similarity_search(query, k=k)
     results = []

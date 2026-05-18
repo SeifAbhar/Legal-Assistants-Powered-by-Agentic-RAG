@@ -1,5 +1,28 @@
+# Virtual environment
 .venv/
+venv/
+env/
+
+# Vector stores (large binary files)
+faiss_case_law/
+faiss_contracts/
 chroma_db/
-__pycache__/
+
+# Environment variables
 .env
+
+# Python cache
+__pycache__/
 *.pyc
+*.pyo
+
+# IDE / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Test / coverage reports
+htmlcov/
+.coverage
+.pytest_cache/

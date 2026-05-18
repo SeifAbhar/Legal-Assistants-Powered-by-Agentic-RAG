@@ -1,6 +1,6 @@
 from langgraph.graph import StateGraph, END
 from .agent_state import AgentState
-from .agent_nodes import decompose_query, retrieve_documents, evaluate_context, generate_answer, draft_clause
+from .agent_nodes import (decompose_query, retrieve_documents, evaluate_context, generate_answer, draft_clause)
 
 def build_agent():
     workflow = StateGraph(AgentState)
@@ -19,7 +19,11 @@ def build_agent():
             return "retrieve"
         return "generate"
 
-    workflow.add_conditional_edges("evaluate", should_continue, {"retrieve": "retrieve", "generate": "generate"})
+    workflow.add_conditional_edges(
+        "evaluate",
+        should_continue,
+        {"retrieve": "retrieve", "generate": "generate"}
+    )
     workflow.add_edge("generate", "draft")
     workflow.add_edge("draft", END)
     return workflow.compile()

@@ -1,4 +1,7 @@
 import argparse
+from dotenv import load_dotenv
+load_dotenv()
+
 from .agent_graph import legal_agent
 
 if __name__ == "__main__":
@@ -21,9 +24,9 @@ if __name__ == "__main__":
     }
 
     print(f"\n🔍 Processing: {args.query}\n{'='*60}")
-    for step, state in legal_agent.stream(initial_state):
-        node_name = list(step.keys())[0]
-        print(f"✓ {node_name}")
+    # Optional: uncomment to see step-by-step
+    # for step, state in legal_agent.stream(initial_state):
+    #     print(f"✓ {list(step.keys())[0]}")
 
     final = legal_agent.invoke(initial_state)
     print("\n" + "="*60)
